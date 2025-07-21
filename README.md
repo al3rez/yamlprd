@@ -78,14 +78,30 @@ max_file_size_mb: 10  # Not just "size: 10"
 
 ## Converting PDFs to YAML PRDs
 
-### Tools
-- **Web**: https://pdf2md.morethan.io/ - Convert PDF to Markdown online
-- **CLI**: `pip install pdf2markdown4llm` - Convert PDF to LLM-friendly Markdown
+### Quick Start
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
-### Workflow
-1. Convert PDF PRD to Markdown using above tools
-2. Extract key information into YAML structure
-3. Validate with AI assistant for completeness
+# Convert PDF to YAML PRD template
+python pdf2yaml.py document.pdf
+
+# Or specify output file
+python pdf2yaml.py document.pdf -o my-prd.yaml
+
+# Get markdown only
+python pdf2yaml.py document.pdf --markdown-only
+```
+
+### CLI Options
+- `-o, --output`: Specify output file path
+- `-m, --markdown-only`: Output markdown without YAML template
+- `--keep-headers`: Keep PDF headers/footers
+- `--include-empty-tables`: Include empty tables
+
+### Alternative Tools
+- **Web**: https://pdf2md.morethan.io/ - Convert PDF to Markdown online
+- **Python**: `pip install pdf2markdown4llm` - Direct library usage
 
 ## Results
 
