@@ -1,0 +1,45 @@
+prd:
+  title: Virtual Try-On Clothing Marketplace
+  purpose: Allow users to sell their clothes and try on outfits virtually using AI with personal photos
+  
+  features:
+    - id: F1
+      user_story: "As a user, I can list clothes for sale by uploading images and entering details like size, price, and category"
+    - id: F2
+      user_story: "As a user, I can browse and filter clothes listed by other users"
+    - id: F3
+      user_story: "As a user, I can upload a full-body photo to use for virtual try-on"
+    - id: F4
+      user_story: "As a user, I can try on up to 5 outfits for free using my uploaded photo"
+    - id: F5
+      user_story: "As a user, I can preview how selected clothes look on me using AI rendering"
+    - id: F6
+      user_story: "As a user, I can purchase clothes directly through the app from other users"
+    - id: F7
+      user_story: "As a seller, I can manage listings, mark items as sold, or remove them"
+    - id: F8
+      user_story: "As a user, I can share my virtual try-on previews on social media"
+    - id: F9
+      user_story: "As a user, I can add more try-ons via in-app purchase after using the free quota"
+    - id: F10
+      user_story: "As a user, I can favorite items and save them for later"
+
+  metrics:
+    - metric: TryOn_Engagement_Rate
+      target: "60% of users complete at least one try-on in their first session"
+    - metric: Listing_Conversion
+      target: "40% of listed items are sold within 30 days"
+    - metric: Retention_Rate
+      target: "50% of users return within 7 days after first try-on"
+
+  constraints:
+    - "Users can only upload one full-body photo per account for try-on"
+    - "AI try-on limit is 5 items per user for free; additional try-ons require purchase"
+    - "Photos must meet quality standards: clear lighting, no obstructions, front-facing"
+    - "Only images of actual clothing items (not stock photos) are allowed for listings"
+    - "Maximum image size for uploads is 10MB"
+    - "Listing content must be moderated and adhere to community guidelines"
+    - "Users under 18 must have verified parental consent to use try-on with photo uploads"
+    - "Try-on previews are non-commercial and cannot be used for advertising without consent"
+    - "Purchases are final unless the seller has enabled returns in their listing"
+    - "Each user can list up to 50 items at a time unless approved as a 'pro seller'"
